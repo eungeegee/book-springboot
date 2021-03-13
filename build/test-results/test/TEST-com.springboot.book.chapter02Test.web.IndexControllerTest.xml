@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-03-13T15:45:44" hostname="unoui-MacBookPro.local" time="0.001">
+<testsuite name="com.springboot.book.chapter02Test.web.IndexControllerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-03-13T16:59:17" hostname="unoui-MacBookPro.local" time="0.001">
   <properties/>
-  <testcase name="initializationError" classname="com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest" time="0.001">
+  <testcase name="initializationError" classname="com.springboot.book.chapter02Test.web.IndexControllerTest" time="0.001">
     <failure message="java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
 	at org.springframework.util.Assert.state(Assert.java:73)
 	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:233)
@@ -58,16 +58,16 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <system-out><![CDATA[00:45:44.369 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest]
-00:45:44.377 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-00:45:44.385 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-00:45:44.401 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-00:45:44.412 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest], using SpringBootContextLoader
-00:45:44.415 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest]: class path resource [com/springboot/book/chapter02Test/domain/posts/PostsRepositoryTest-context.xml] does not exist
-00:45:44.416 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest]: class path resource [com/springboot/book/chapter02Test/domain/posts/PostsRepositoryTestContext.groovy] does not exist
-00:45:44.416 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-00:45:44.417 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest]: PostsRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:45:44.457 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.springboot.book.chapter02Test.domain.posts.PostsRepositoryTest]
+  <system-out><![CDATA[01:59:17.453 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.springboot.book.chapter02Test.web.IndexControllerTest]
+01:59:17.460 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+01:59:17.466 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+01:59:17.482 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.springboot.book.chapter02Test.web.IndexControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+01:59:17.494 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.springboot.book.chapter02Test.web.IndexControllerTest], using SpringBootContextLoader
+01:59:17.497 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.springboot.book.chapter02Test.web.IndexControllerTest]: class path resource [com/springboot/book/chapter02Test/web/IndexControllerTest-context.xml] does not exist
+01:59:17.498 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.springboot.book.chapter02Test.web.IndexControllerTest]: class path resource [com/springboot/book/chapter02Test/web/IndexControllerTestContext.groovy] does not exist
+01:59:17.499 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.springboot.book.chapter02Test.web.IndexControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+01:59:17.500 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.springboot.book.chapter02Test.web.IndexControllerTest]: IndexControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:59:17.538 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.springboot.book.chapter02Test.web.IndexControllerTest]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

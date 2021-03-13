@@ -36,6 +36,7 @@ dependencies {
     // 우측 끝에는 버전정보를 담지만, 최상단에서 버전정보를 한번에 관리하고 있음으로 이곳에서는 생략 -> 이방식으로 하면 버전관리용이, 버전충돌을 예방
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
+    compile('org.springframework.boot:spring-boot-starter-mustache') // 머스타쉬 템플릿 추가
     compile('org.springframework.boot:spring-boot-starter-data-jpa') // spring-data-jpa 추상화 라이브러리
     compile('com.h2database:h2') // h2 : 인메모리 관계형 데이터베이스, APP 재시작시 초기화 됨으로 테스트용으로 자주쓰임
     testCompile('org.springframework.boot:spring-boot-starter-test')
