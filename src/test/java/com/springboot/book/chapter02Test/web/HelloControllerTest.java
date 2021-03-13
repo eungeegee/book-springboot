@@ -44,7 +44,6 @@ public class HelloControllerTest {
             .andExpect(jsonPath("$.name", is(name)))
             .andExpect(jsonPath("$.amount", is(amount)));
             // jsonPath : json 응답값의 필드별로 검증할 수 있는 메서드
-`
   }
 }
 

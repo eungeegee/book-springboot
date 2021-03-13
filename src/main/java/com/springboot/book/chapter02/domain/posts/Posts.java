@@ -1,6 +1,7 @@
 package com.springboot.book.chapter02.domain.posts;
 
 
+import com.springboot.book.chapter02.domain.BaseTimeEntity; // createdDate, modifiedDate 을 상속받음
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @Getter // 롬복의 어노테이션, 클래스 내 모든 필드의 Getter 메소드를 자동 생성,, 즉 각 컬럼의 getter 가 생성!
 @NoArgsConstructor // 롬복의 어노테이션, 기본생성자 자동추가 public Posts(){} 와 같은 효과
 @Entity // JPA 의 어노테이션 ,
-public class Posts { // 클래스명은 DB 테이블로 전환
+public class Posts extends BaseTimeEntity { // 클래스명은 DB 테이블로 전환
   // -> Posts => posts , SalesManager.java -> sales_manager table
   // 이 클래스는 DB 테이블과 매칭되는 클래스, -> 테이블 컬럼추가는 여기서 하겠구만!
 
@@ -38,5 +39,10 @@ public class Posts { // 클래스명은 DB 테이블로 전환
     this.title = title;
     this.content = content;
     this.author = author;
+  }
+
+  public void update(String title, String content) {
+    this.title = title;
+    this.content = content;
   }
 }
